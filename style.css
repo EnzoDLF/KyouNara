@@ -66,20 +66,18 @@ body {
 }
 
 .button-image {
-    width: 400px; /* Taille doublée */
+    width: 200px; /* Taille doublée */
     height: auto;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    animation: pulse 1.5s infinite; /* Animation de pulsation */
+    animation: pulse 1.5s infinite;
 }
 
-/* Animation pour le bouton au survol */
 .button-image:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Animation de pulsation */
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -89,4 +87,27 @@ body {
         transform: scale(1.05);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     }
+}
+
+/* Footer Twitch - centrage des logos avec pseudo */
+.twitch-footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+    background-color: #020403;
+}
+
+.twitch-link {
+    text-align: center;
+}
+
+.twitch-logo {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.twitch-logo:hover {
+    transform: scale(1.1);
 }
